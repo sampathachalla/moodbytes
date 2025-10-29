@@ -39,8 +39,7 @@ yarn-error.*
 app-example
 
 # Build artifacts (large files)
-*.aab
-*.apk
+# Note: *.aab and *.apk are tracked with Git LFS - see .gitattributes
 *.ipa
 *.app
 
