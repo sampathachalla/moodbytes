@@ -37,3 +37,38 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+
+# Build artifacts (large files)
+*.aab
+*.apk
+*.ipa
+*.app
+
+# Android build directories
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+
+# iOS build directories
+ios/build/
+ios/Pods/
+ios/*.xcworkspace
+ios/*.xcodeproj/xcuserdata/
+
+# Large bundle files
+*.bundle
+*.map
+
+# Gradle
+.gradle/
+
+# Docker
+*.log
+
+# Archive files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z

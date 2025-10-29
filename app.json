@@ -1,42 +1,58 @@
 {
   "expo": {
-    "name": "fitApp",
-    "slug": "fitApp",
+    "name": "ModeBytes",
+    "slug": "ModeBytes",
     "version": "1.0.0",
     "orientation": "portrait",
+    "scheme": "modebytes",
     "icon": "./assets/images/icon.png",
-    "scheme": "fitapp",
+    "splash": {
+      "image": "./assets/images/splashscreen_logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.moodbytes.app"
     },
     "android": {
+      "edgeToEdgeEnabled": true,
+      "package": "com.moodbytes.app",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
+      }
     },
     "web": {
       "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "output": "static"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "102ee9e7-deb8-4cc0-ac8a-791d9f6bdf30"
+      }
+    },
+    "owner": "sampath2001"
   }
 }
